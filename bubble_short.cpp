@@ -1,5 +1,5 @@
-#include <iostream>      // Mengimpor pustaka iostream untuk input dan output
-using namespace std;     // Menggunakan namespace std
+#include <iostream>     
+using namespace std;
 
 class BubbleSort {       // Membuat class BubbleSort
 private:                
@@ -7,8 +7,8 @@ private:
     int n;               // Deklarasi variabel n untuk menyimpan banyaknya elemen pada array
 
 public:                 
-    void read() {        // Method untuk membaca input
-        while (true) {   // Looping tak terbatas
+    void input() {        // Method untuk input
+        while (true) {   // Looping 
             cout << "Masukan banyaknya elemen pada array : ";  // Output ke layar
             cin >> n;     // Input dari pengguna
             if (n <= 20)  // Jika n kurang dari atau sama dengan 20
@@ -54,8 +54,8 @@ public:
 
 int main(){
     BubbleSort obj;  // Membuat objek obj dari class BubbleSort
-    obj.read();      // Memanggil method read() dari obj
-    obj.bubbleSortArray();  // Memanggil method bubbleSortArray() dari obj
-    obj.display();   // Memanggil method display() dari obj
+    obj.input();      // Memanggil method read() dari class BubbleSort
+    obj.bubbleSortArray();  // Memanggil method bubbleSortArray() dari class BubbleSort
+    obj.display();   // Memanggil method display() dari class BubbleSort
     return 0;
 }
